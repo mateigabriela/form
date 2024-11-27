@@ -1,0 +1,186 @@
+html {
+    background-color: #ededed;
+    font-family: Roboto;
+}
+
+#container {
+    position: absolute;
+    background-color: white;
+    width: 1300px;
+    height: 600px;
+    inset: 50%;
+    translate: -50% -50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: grid;
+    grid-template-areas: 
+    "info section1";
+    grid-template-columns: 1fr 2fr;
+
+}
+
+#info {
+    grid-area: info;
+    background-color: #5bce93;
+    color: white;
+}
+
+#section1 {
+    grid-area: section1;
+}
+
+#section2 {
+    grid-area: section2;
+}
+
+h2 {
+    font-weight: 400;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px; 
+    height: 50px;
+    border: 1px solid white; 
+    border-radius: 50%; 
+}
+
+.icon i {
+    font-size: 24px; 
+}
+
+.sect {
+    display: flex;
+    flex-direction: row;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 8px;
+    gap: 20px;
+    text-align: left;
+    line-height: 1.5;
+}
+
+
+.write p {
+    margin-top: 0px;
+}
+
+.iconphone {
+    width: 50px;
+    height: 50px;
+}
+
+#info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#info h2{
+    margin-left: 30px;
+}
+
+#info > p {
+    margin-left: 30px;
+    margin-top: 0px;
+}
+
+.writeTop{
+    margin-top: 15px;
+}
+
+#section1 {
+    color: black;
+    margin: 20px;
+}
+
+#form {
+    display: grid;
+    grid-template-areas: 
+    "fullname email"
+    "subject subject"
+    "message message";
+    gap: 20px;
+}
+
+#fullname {
+    grid-area: fullname;
+}
+
+#email {
+    grid-area: email;
+}
+
+#subject {
+    grid-area: subject;
+}
+
+#message {
+    grid-area: message;
+}
+
+ #form div {
+    margin-bottom: 15px;
+} 
+
+label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+    font-size: small;
+}
+input{
+    width: 90%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin: 10px;
+}
+
+.firstrow input {
+    width: 80%;
+}
+
+#form {
+    margin: 20px;
+}
+
+textarea {
+    height: 100px;
+    width: 90%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding-top: 10px;  
+    line-height: 1.5;  
+    resize: vertical;  
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-family: Roboto;
+}
+
+#section1 h2 {
+    margin-bottom: 10px;
+}
+
+button {
+    width: 170px;
+    height: 50px;
+    color: white;
+    background-color: #5bce93;
+    border: none;
+    font-size: 17px;
+    font-weight: 700;
+    border-radius: 5px;
+
+}
+
+button:hover {
+    cursor: pointer;
+}
